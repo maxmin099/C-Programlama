@@ -1,0 +1,1 @@
+Girilen virgüllü sayýnýn virgülden sonraki basamaklarýný yazdýrýn. (Virgülden sonra 3 basamak olacak.)
