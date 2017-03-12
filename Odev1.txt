@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+	float sayi;
+	int tamsayi,sonuc;//tamsayi degiskeninin float olarak tanimladigim sayi üzerinde mod islemi yapamadigim icin tanimliyorum.
+	printf("Virgulden sonraki 3 haneyi gosterici\n----\n\n");//Baslik
+	printf("Virgullu sayiyi giriniz: ");
+	scanf("%f",&sayi);
+	tamsayi=sayi*1000;//virgulden sonraki 3 basamagi da katarak sayiyi integer olan tamsayi degiskenine atadim.
+	sonuc=tamsayi%1000;//son 3 basamagi almak icin 1000'e bolumunden kalani aliyorum.
+	printf("\nVirgulden sonraki 3 hane: %d\n",(sonuc==0)?printf("\nKardesim virgullu sayi dedim"),end():sonuc);//eger virgulden sonraki 3 basamak 000 ise demek ki virgul kullanilmamistir.
+	//bu durumu sorgulamak icin bir yapi kullandim. end diye bir fonksiyonunu programi sonlandirmak icin kullandim.
+}
