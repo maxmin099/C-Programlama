@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+	float x;
+	float kok;
+	printf("kökü alýnacak sayýyý giriniz:");
+	scanf("%f",&x);
+	kok=pow(x,0.5);// 1/2 kullanamayýz çünkü sonuç integer olarak çýkar yani 0.-int/int=int'tir.
+	printf("sayýnýn kökü: %f",kok);
+	return 0;
+}
