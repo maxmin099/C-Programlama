@@ -9,5 +9,4 @@ int main() {
 	sonuc=tamsayi%1000;//son 3 basamagi almak icin 1000'e bolumunden kalani aliyorum.
 	printf("\nVirgulden sonraki 3 hane: %d\n",(sonuc==0)?printf("\nKardesim virgullu sayi dedim"),end():sonuc);//eger virgulden sonraki 3 basamak 000 ise demek ki virgul kullanilmamistir.
 	//bu durumu sorgulamak icin bir yapi kullandim. end diye bir fonksiyonunu programi sonlandirmak icin kullandim.
-//ben oguzhaným
 }
