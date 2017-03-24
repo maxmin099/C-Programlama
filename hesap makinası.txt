@@ -1,0 +1,55 @@
+#include <stdio.h>           \\fatih programda bir hata var bi bak
+
+int main() {
+	
+	int x,y; 
+	int topsonuc;
+	int cýkarmasonuc;     \\bir çalýþtýr ama bu satýrda gösteriyo hatayý
+	int bolsonuc;
+	int carpsonuc;
+	int ýslemsec;
+	printf("lutfen býrýncý sayýyý gýrýnýz:");
+	scanf("%d",&x);
+	printf("lütfen ýkýncý sayýyý gýrýnýz:");
+	scanf("%d",&y);
+	
+	printf("kullanacaðýnýz iþlemi secýnýz:\n");
+	printf("toplama iþlemi için '1' e basýnýz\n");
+	printf("cýkarma iþlemi için '2' ye basýnýz\n");
+	printf("carpma iþlemi için '3' e basýnýz\n");
+	printf("bölme iþlemi için '4' e basýnýz\n");
+	scanf("%d",&ýslemsec);
+	
+	switch(ýslemsec) {
+		case 1:{
+			topsonuc=x+y;
+			printf("toplama iþleminin sonucu %d dir:",topsonuc);
+			break;
+		}
+		case 2:{
+			cýkarmasonuc=x-y;
+			printf("cýkarma iþleminin sonucu %d dir:",cýkarmasonuc);
+			break;
+		}
+		case 3:{
+			carpsonuc=x*y;
+			printf("çarpma iþleminin sonucu %d dir:",carrpsonuc);
+			break;
+		}
+		case 4:{
+			bolsonuc=x/y;
+			printf("bölme iþleminin sonucu %d dir:",bolsonuc);
+			break;
+		}
+		default:{
+			("hata:yapýlamayan iþlem!");
+			break;
+		}
+	}
+	
+	
+	
+	
+	
+	
+}
