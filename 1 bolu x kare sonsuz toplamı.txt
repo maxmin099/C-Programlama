@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define PI 3.141592653589793238462643383279502884197169399375105820974944592307816406286
+
+int main() {
+	double deger = (PI*PI)/ 6,temp ,deger2=0,i;
+	int N=1000000;
+	for (i = 1; i<N; i++) {
+		temp = 1.0/(i*i);
+		deger2= deger2+temp;
+	}
+	
+	printf("gercek degeri=%22.17f\n", deger);
+	printf("benim degerim=%22.17f\n", deger2);
+}
