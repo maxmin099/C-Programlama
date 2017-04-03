@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define PI 3.14159265358979323846
+
+int main() {
+	double x = PI / 6, sinx = 0, i;
+	int N = 20;
+	double temp=1 ;
+
+	for (i = 0; i <= N; i++) {
+		temp = -temp*(x*x) / ((2 * i + 1) * 2 * i);
+		sinx = sinx + temp;
+	}
+	printf("sin(x)=%.10f\n", sin(x));
+	printf("sin(x)=%.10f\n", sinx);
+	printf("\n\n");
+	system("pause");
+
+
+
+}
