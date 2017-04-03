@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define PI 3.14159265358979323846
+
+int main() {
+	double x = PI / 5, sinx = x, i;
+	int N = 50,kontrol;
+	double temp=x ;
+	printf("Virgulden sonraki en az kac basamak sin(x) fonk. ile uyussun?\n");
+	scanf("%d",&kontrol);
+	
+	for (i = 1; 1; i++) {
+		temp = -temp*(x*x) / ((2 * i + 1) * 2 * i);
+		sinx = sinx + temp;	
+		
+			if (0<=temp&& temp<=pow(10,-kontrol))
+		{
+			break;
+		}
+	}
+	
+	printf("sin(x)=%20.17f\n", sin(x));
+	printf("sinx=%22.17f\n", sinx);
+}

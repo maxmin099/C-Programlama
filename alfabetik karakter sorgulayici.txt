@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{	int kar;
+	printf("Harflerin ASCII degerleri:\nA:%d B:%d ... Y:%d Z:%d\na:%d b:%d ... y:%d z:%d",'A','B','Y','Z','a','b','y','z');
+	printf("\n-------------------------");
+	printf("\n\nBir karakter giriniz: ");
+	scanf("%c",&kar);
+	printf("\nASCII degeri: %d\n'A'<=kar&& kar<='Z' sorgusu sonucu: %d\n'a'<=kar&& kar<='z' sorgusu sonucu: %d\n",kar,'A'<=kar&& kar<='Z','a'<=kar&&kar<='z');
+	if(('A'<=kar&& kar<='Z')||('a'<=kar&&kar<='z'))
+		printf("\nGirdiginiz karakter bir ALFABETIK KARAKTERDIR.");
+	else
+		printf("\nGirdiginiz karakter bir alfabetik karakter DEGILDIR!");
+
+	printf("\n\nisalpha() fonksiyonu ile degeri: %d\nIf-else ile degeri: %14d",isalpha(kar),('A'<=kar&& kar<='Z')||('a'<=kar&&kar<='z'))	;
+} 

@@ -1,0 +1,94 @@
+#include<stdio.h>
+
+int sectir()
+{
+	int secim;
+	scanf("%d",&secim);
+	return secim;
+}
+
+int main()
+{
+	
+int secim;
+puts("Seciminizi yapiniz.");
+puts("1- Ucgen");
+puts("2- Dikdortgen");
+puts("3- Daire");
+switch(sectir())
+{
+	case(1)	:
+		puts("Seciminizi yapiniz.");
+		puts("1- Ucgenin alani");
+		puts("2- Ucgenin cevresi");
+		switch(sectir())
+		{
+			case(1):
+				float h,x;
+				printf("Yukseklik giriniz: ");
+				scanf("%f",&h);
+				printf("Taban uzunlugu giriniz: ");
+				scanf("%f",&x);
+				printf("Alan: %f",(h*x)/2.0);
+				break;
+			
+			case(2):
+				float k1,k2,k3;
+				printf("Birinci kenar uzunlugu: ");
+				scanf("%f",&k1);
+				printf("Ikinci kenar uzunlugu: ");
+				scanf("%f",&k2);
+				printf("Ucuncu kenar uzunlugu: ");
+				scanf("%f",&k3);
+				printf("Cevre: %f",0.0+k1+k2+k3);
+				break;
+		}
+		break;
+	case(2):
+		puts("Seciminizi yapiniz.");
+		puts("1- Dikdortgenin alani");
+		puts("2- Dikdortgenin cevresi");
+		
+		switch(sectir())
+		{
+			case(1):
+				float h,x;
+				printf("Birinci kenari giriniz: ");
+				scanf("%f",&h);
+				printf("Ýkinci kenari giriniz: ");
+				scanf("%f",&x);
+				printf("Alan: %f",1.0*h*x);
+				break;
+			
+			case(2):
+				printf("Birinci kenari giriniz: ");
+				scanf("%f",&h);
+				printf("Ýkinci kenari giriniz: ");
+				scanf("%f",&x);
+				printf("Cevre: %f",2.0*(h+x));
+				break;
+		}
+		break;
+	case(3):
+		puts("Seciminizi yapiniz.");
+		puts("1- Daire alani");
+		puts("2- Daire cevresi");
+		switch(sectir())	
+		{
+			case(1):
+				float x;
+				printf("Yaricapi giriniz: ");
+				scanf("%f",&x);
+				printf("Alan: %f",3.14*x*x);
+				break;
+			
+			case(2):
+				printf("Yaricapi giriniz: ");
+				scanf("%f",&x);
+				printf("Cevre: %f",2*3.14*x);
+				break;
+		}
+		break;
+}
+}
+	
